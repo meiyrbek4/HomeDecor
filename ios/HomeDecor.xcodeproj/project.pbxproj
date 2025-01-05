@@ -12,9 +12,21 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		2DE1B19EAB604DC0A401D429 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 03F3086F242A4EDAA6963B53 /* Poppins-Regular.ttf */; };
 		3CB70653E3F283423CCEA075 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		3CF6061266634A1489281714 /* LeagueSpartan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FFFF226091674BF281047C49 /* LeagueSpartan-Medium.ttf */; };
+		5BE7742D2CE74A25BF3DE4DC /* LeagueSpartan-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 733739EC711A403F87783DA9 /* LeagueSpartan-SemiBold.ttf */; };
+		6883EDF313B541CB8635975E /* LeagueSpartan-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F7344DEF65074D0AACA41282 /* LeagueSpartan-Bold.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-HomeDecor-HomeDecorTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-HomeDecor-HomeDecorTests.a */; };
+		7D52436D81804A839A73E081 /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACF463DBE4BC45CCACFB8070 /* Poppins-Medium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		8F7EBDE7CEF14776A593FE56 /* Poppins-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93E0E0708E4B40998F14F102 /* Poppins-Light.ttf */; };
+		942EE4E799C042BBAEB85CBE /* LeagueSpartan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96ABFAF2BCEF48A492FA7858 /* LeagueSpartan-Regular.ttf */; };
+		A5D7E30B1C71456CB9111017 /* LeagueSpartan-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AFDF728E6C294B39B00C8F28 /* LeagueSpartan-Thin.ttf */; };
+		AC011F920ED3400485DA1C1E /* Poppins-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9367EDE6AC4243E19B0D4768 /* Poppins-SemiBold.ttf */; };
+		C5CA3756EA444214BBB245F4 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C76C92DBFA4473E832D218E /* Poppins-Bold.ttf */; };
+		CAC030A3CBEE4FEF90373866 /* Poppins-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E005919A3FE847E287FB0F9D /* Poppins-Thin.ttf */; };
+		F7701E3EE2E946A28908AA06 /* LeagueSpartan-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 34C301DF7F76436C87C1A586 /* LeagueSpartan-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +43,7 @@
 		00E356EE1AD99517003FC87E /* HomeDecorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HomeDecorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* HomeDecorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDecorTests.m; sourceTree = "<group>"; };
+		03F3086F242A4EDAA6963B53 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Regular.ttf"; path = "../assets/fonts/Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* HomeDecor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeDecor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = HomeDecor/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = HomeDecor/AppDelegate.mm; sourceTree = "<group>"; };
@@ -39,13 +52,24 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = HomeDecor/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = HomeDecor/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-HomeDecor-HomeDecorTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomeDecor-HomeDecorTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C76C92DBFA4473E832D218E /* Poppins-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Bold.ttf"; path = "../assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		34C301DF7F76436C87C1A586 /* LeagueSpartan-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Light.ttf"; path = "../assets/fonts/LeagueSpartan-Light.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-HomeDecor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeDecor.debug.xcconfig"; path = "Target Support Files/Pods-HomeDecor/Pods-HomeDecor.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-HomeDecor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeDecor.release.xcconfig"; path = "Target Support Files/Pods-HomeDecor/Pods-HomeDecor.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-HomeDecor-HomeDecorTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeDecor-HomeDecorTests.debug.xcconfig"; path = "Target Support Files/Pods-HomeDecor-HomeDecorTests/Pods-HomeDecor-HomeDecorTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-HomeDecor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HomeDecor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		733739EC711A403F87783DA9 /* LeagueSpartan-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-SemiBold.ttf"; path = "../assets/fonts/LeagueSpartan-SemiBold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = HomeDecor/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-HomeDecor-HomeDecorTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HomeDecor-HomeDecorTests.release.xcconfig"; path = "Target Support Files/Pods-HomeDecor-HomeDecorTests/Pods-HomeDecor-HomeDecorTests.release.xcconfig"; sourceTree = "<group>"; };
+		9367EDE6AC4243E19B0D4768 /* Poppins-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-SemiBold.ttf"; path = "../assets/fonts/Poppins-SemiBold.ttf"; sourceTree = "<group>"; };
+		93E0E0708E4B40998F14F102 /* Poppins-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Light.ttf"; path = "../assets/fonts/Poppins-Light.ttf"; sourceTree = "<group>"; };
+		96ABFAF2BCEF48A492FA7858 /* LeagueSpartan-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Regular.ttf"; path = "../assets/fonts/LeagueSpartan-Regular.ttf"; sourceTree = "<group>"; };
+		ACF463DBE4BC45CCACFB8070 /* Poppins-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Medium.ttf"; path = "../assets/fonts/Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		AFDF728E6C294B39B00C8F28 /* LeagueSpartan-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Thin.ttf"; path = "../assets/fonts/LeagueSpartan-Thin.ttf"; sourceTree = "<group>"; };
+		E005919A3FE847E287FB0F9D /* Poppins-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Poppins-Thin.ttf"; path = "../assets/fonts/Poppins-Thin.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		F7344DEF65074D0AACA41282 /* LeagueSpartan-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Bold.ttf"; path = "../assets/fonts/LeagueSpartan-Bold.ttf"; sourceTree = "<group>"; };
+		FFFF226091674BF281047C49 /* LeagueSpartan-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "LeagueSpartan-Medium.ttf"; path = "../assets/fonts/LeagueSpartan-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +149,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				97CB4CBF884D48B2BC100721 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -138,6 +163,26 @@
 				00E356EE1AD99517003FC87E /* HomeDecorTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		97CB4CBF884D48B2BC100721 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7344DEF65074D0AACA41282 /* LeagueSpartan-Bold.ttf */,
+				34C301DF7F76436C87C1A586 /* LeagueSpartan-Light.ttf */,
+				FFFF226091674BF281047C49 /* LeagueSpartan-Medium.ttf */,
+				96ABFAF2BCEF48A492FA7858 /* LeagueSpartan-Regular.ttf */,
+				733739EC711A403F87783DA9 /* LeagueSpartan-SemiBold.ttf */,
+				AFDF728E6C294B39B00C8F28 /* LeagueSpartan-Thin.ttf */,
+				1C76C92DBFA4473E832D218E /* Poppins-Bold.ttf */,
+				93E0E0708E4B40998F14F102 /* Poppins-Light.ttf */,
+				ACF463DBE4BC45CCACFB8070 /* Poppins-Medium.ttf */,
+				03F3086F242A4EDAA6963B53 /* Poppins-Regular.ttf */,
+				9367EDE6AC4243E19B0D4768 /* Poppins-SemiBold.ttf */,
+				E005919A3FE847E287FB0F9D /* Poppins-Thin.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -247,6 +292,18 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3CB70653E3F283423CCEA075 /* PrivacyInfo.xcprivacy in Resources */,
+				6883EDF313B541CB8635975E /* LeagueSpartan-Bold.ttf in Resources */,
+				F7701E3EE2E946A28908AA06 /* LeagueSpartan-Light.ttf in Resources */,
+				3CF6061266634A1489281714 /* LeagueSpartan-Medium.ttf in Resources */,
+				942EE4E799C042BBAEB85CBE /* LeagueSpartan-Regular.ttf in Resources */,
+				5BE7742D2CE74A25BF3DE4DC /* LeagueSpartan-SemiBold.ttf in Resources */,
+				A5D7E30B1C71456CB9111017 /* LeagueSpartan-Thin.ttf in Resources */,
+				C5CA3756EA444214BBB245F4 /* Poppins-Bold.ttf in Resources */,
+				8F7EBDE7CEF14776A593FE56 /* Poppins-Light.ttf in Resources */,
+				7D52436D81804A839A73E081 /* Poppins-Medium.ttf in Resources */,
+				2DE1B19EAB604DC0A401D429 /* Poppins-Regular.ttf in Resources */,
+				AC011F920ED3400485DA1C1E /* Poppins-SemiBold.ttf in Resources */,
+				CAC030A3CBEE4FEF90373866 /* Poppins-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
