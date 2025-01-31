@@ -13,10 +13,12 @@ import {colors} from '../../constants/colors';
 import SearchIcon from '../../ui/icons/SearchIcon';
 import {SubtitleSalmon} from '../../constants/textStyles';
 import {spacing} from '../../constants/dimensions';
-import Card from '../../ui/Card';
+import Card from '../../ui/features/Card';
 import {useAtomTheme} from '../../contexts/AtomThemeContext';
 import Subtext from '../../ui/text/Subtext';
 import TitleSalmon from '../../ui/text/TitleSalmon';
+import TopMenu from '../../ui/features/TopMenu/TopMenu';
+import Indicator from '../../ui/features/Indicator';
 
 const width = Dimensions.get('window').width;
 const wrapperWidth = width * 0.9;
@@ -46,11 +48,13 @@ const data: Collection[] = [
 const Home = () => {
   const themeNow = useAtomTheme();
   return (
-    <ScrollView
-      contentContainerStyle={styles.contentContainer}
+    <SafeAreaView
+      // contentContainerStyle={styles.contentContainer}
       style={[styles.container, {backgroundColor: themeNow.background}]}>
-      <SafeAreaView
-        style={[styles.wrapper, {backgroundColor: themeNow.background}]}>
+      <ScrollView
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={styles.wrapper}
+        style={{backgroundColor: themeNow.background}}>
         <View style={styles.topWrapper}>
           <View style={styles.header}>
             <View>
@@ -65,20 +69,9 @@ const Home = () => {
             source={require('../../../assets/specialOffer.jpg')}
             style={{width: '100%'}}
           />
-          <View style={styles.indicator}>
-            <View style={styles.indicatorItem} />
-            <View style={styles.indicatorItem} />
-            <View style={styles.indicatorItem} />
-          </View>
+          <Indicator />
           <Text style={SubtitleSalmon}>Categories</Text>
-          <FlatList
-            data={[1, 2, 3, 4, 5]}
-            renderItem={() => <View style={styles.flatlistTest} />}
-            keyExtractor={item => item.toString()}
-            horizontal
-            contentContainerStyle={{gap: 15}}
-            showsHorizontalScrollIndicator={false}
-          />
+          <TopMenu />
         </View>
         <View>
           <Text style={SubtitleSalmon}>Best Seller</Text>
@@ -101,8 +94,8 @@ const Home = () => {
             ItemSeparatorComponent={() => <View style={{width: 20}} />}
           />
         </View>
-      </SafeAreaView>
-    </ScrollView>
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 
@@ -111,12 +104,9 @@ export default Home;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  },
-  contentContainer: {
     alignItems: 'center',
   },
   wrapper: {
-    flex: 1,
     width: wrapperWidth,
     gap: spacing.md,
   },
@@ -133,24 +123,6 @@ const styles = StyleSheet.create({
     backgroundColor: colors.salmon,
     padding: 15,
     borderRadius: 30,
-  },
-  indicator: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: spacing.xs,
-  },
-  indicatorItem: {
-    width: 20,
-    height: 4,
-    borderRadius: 5,
-    backgroundColor: colors.salmon,
-  },
-  flatlistTest: {
-    width: 65,
-    height: 65,
-    borderRadius: 10,
-    backgroundColor: colors.salmon,
   },
 
   bottomWrapper: {

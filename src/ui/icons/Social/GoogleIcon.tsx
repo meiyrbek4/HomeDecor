@@ -1,12 +1,9 @@
-import {useAtomValue} from 'jotai';
 import React from 'react';
 import Svg, {Circle, Path} from 'react-native-svg';
-import {palette, theme} from '../../config/atoms';
+import {useAtomTheme} from '../../../contexts/AtomThemeContext';
 
 const GoogleIcon = (props: any) => {
-  const atomTheme = useAtomValue(theme);
-  const atomPalette = useAtomValue(palette);
-  const themeNow = atomPalette[atomTheme];
+  const themeNow = useAtomTheme();
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"

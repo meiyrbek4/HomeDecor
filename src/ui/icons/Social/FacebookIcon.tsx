@@ -1,11 +1,8 @@
-import {useAtomValue} from 'jotai';
 import * as React from 'react';
 import Svg, {Circle, Path} from 'react-native-svg';
-import {palette, theme} from '../../config/atoms';
+import {useAtomTheme} from '../../../contexts/AtomThemeContext';
 const FacebookIcon = (props: any) => {
-  const atomTheme = useAtomValue(theme);
-  const atomPalette = useAtomValue(palette);
-  const themeNow = atomPalette[atomTheme];
+  const themeNow = useAtomTheme();
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"

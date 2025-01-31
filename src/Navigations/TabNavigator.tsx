@@ -1,15 +1,15 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Home from '../Screens/BottomScreens/Home';
-import HomeIcon from '../ui/icons/HomeIcon';
-import Categories from '../Screens/BottomScreens/Categories';
-import Cart from '../Screens/BottomScreens/Cart';
-import Wishlist from '../Screens/BottomScreens/Wishlist';
-import Profile from '../Screens/BottomScreens/Profile';
-import CategoriesIcon from '../ui/icons/CategoriesIcon';
-import CartIcon from '../ui/icons/CartIcon';
-import WishlistIcon from '../ui/icons/WishlistIcon';
-import ProfileIcon from '../ui/icons/ProfileIcon';
+import Home from '../screens/BottomScreens/Home';
+import HomeIcon from '../ui/icons/BottomMenuIcons/HomeIcon';
+import Categories from '../screens/BottomScreens/Categories';
+import Cart from '../screens/BottomScreens/Cart';
+import Wishlist from '../screens/BottomScreens/Wishlist';
+import Profile from '../screens/BottomScreens/Profile';
+import CategoriesIcon from '../ui/icons/BottomMenuIcons/CategoriesIcon';
+import CartIcon from '../ui/icons/BottomMenuIcons/CartIcon';
+import WishlistIcon from '../ui/icons/BottomMenuIcons/WishlistIcon';
+import ProfileIcon from '../ui/icons/BottomMenuIcons/ProfileIcon';
 
 import {useAtomTheme} from '../contexts/AtomThemeContext';
 

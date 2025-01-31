@@ -17,8 +17,8 @@ import SubtitleBlack from '../ui/text/SubtitleBlack';
 import ButtonPrimary from '../ui/ButtonPrimary';
 import {LeagueSpartan} from '../constants/fontFamily';
 import {fontSize, spacing} from '../constants/dimensions';
-import GoogleIcon from '../ui/icons/GoogleIcon';
-import FacebookIcon from '../ui/icons/FacebookIcon';
+import GoogleIcon from '../ui/icons/Social/GoogleIcon';
+import FacebookIcon from '../ui/icons/Social/FacebookIcon';
 import {useAtomValue} from 'jotai';
 import {palette, theme} from '../config/atoms';
 

@@ -4,9 +4,9 @@ import {
   NativeStackNavigationProp,
 } from '@react-navigation/native-stack';
 import {NavigationContainer} from '@react-navigation/native';
-import OnBoarding from '../Screens/OnBoarding';
-import Launch from '../Screens/Launch';
-import Login from '../Screens/Login';
+import OnBoarding from '../screens/OnBoarding';
+import Launch from '../screens/Launch';
+import Login from '../screens/Login';
 import TabNavigator from './TabNavigator';
 import {useAtomTheme} from '../contexts/AtomThemeContext';
 import {colors} from '../constants/colors';

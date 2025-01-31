@@ -44,11 +44,12 @@ const OnBoarding = () => {
             backgroundColor: themeNow.background,
             image: (
               <Image
-                source={require('../../assets/onBoardingScreens/onBoard_1.png')}
+                source={{
+                  uri: 'https://res.cloudinary.com/dawklruhy/image/upload/f_auto,q_auto/r8gmpjysduk5hwtmfrge',
+                }}
                 style={styles.image}
               />
             ),
-
             title: 'Confortable Space',
             subtitle:
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
@@ -57,7 +58,9 @@ const OnBoarding = () => {
             backgroundColor: themeNow.background,
             image: (
               <Image
-                source={require('../../assets/onBoardingScreens/onBoard_2.png')}
+                source={{
+                  uri: 'https://res.cloudinary.com/dawklruhy/image/upload/f_auto,q_auto/yb4pvoqbnopzw3wzajkp',
+                }}
                 style={styles.image}
               />
             ),
@@ -69,7 +72,9 @@ const OnBoarding = () => {
             backgroundColor: themeNow.background,
             image: (
               <Image
-                source={require('../../assets/onBoardingScreens/onBoard_3.png')}
+                source={{
+                  uri: 'https://res.cloudinary.com/dawklruhy/image/upload/f_auto,q_auto/czisjaz7fbnbnk14lwnf',
+                }}
                 style={styles.image}
               />
             ),
@@ -81,7 +86,9 @@ const OnBoarding = () => {
             backgroundColor: themeNow.background,
             image: (
               <Image
-                source={require('../../assets/onBoardingScreens/onBoard_4.png')}
+                source={{
+                  uri: 'https://res.cloudinary.com/dawklruhy/image/upload/f_auto,q_auto/m8cbp42ssztuujewndwu',
+                }}
                 style={styles.image}
               />
             ),
@@ -122,6 +129,8 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
+    height: 510,
+    resizeMode: 'contain',
   },
   imageContainerStyles: {
     borderBottomLeftRadius: 20,
