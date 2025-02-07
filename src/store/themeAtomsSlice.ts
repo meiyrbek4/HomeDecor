@@ -28,7 +28,7 @@ export const palette = atom<Palette>({
     primaryText: colors.black,
     secondaryText: colors.brownRosy,
     itemBackground: colors.beige,
-    icon: '#4B4544',
+    icon: colors.orangeDark,
     activeElement: colors.black,
     inactiveElement: colors.salmon,
     tint: colors.black,
@@ -40,7 +40,7 @@ export const palette = atom<Palette>({
     background: colors.black,
     primaryText: colors.white,
     secondaryText: colors.salmon,
-    itemBackground: '#4B4544',
+    itemBackground: colors.orangeDark,
     icon: colors.salmon,
     tint: colors.white,
 
@@ -59,5 +59,5 @@ export const palette = atom<Palette>({
 //   terracotta: '#CC7861',
 //   brownRosy: '#DCBEB6',
 //   beige: '#FAF0E6',
-//   orangeDark: '#CC7861',
+//   orangeDark: '#4B4544',
 // };

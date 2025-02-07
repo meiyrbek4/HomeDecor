@@ -5,7 +5,7 @@ interface Colors {
   terracotta: '#CC7861';
   brownRosy: '#DCBEB6';
   beige: '#FAF0E6';
-  orangeDark: '#CC7861';
+  orangeDark: '#4B4544';
 }
 
 export const colors: Colors = {
@@ -15,5 +15,5 @@ export const colors: Colors = {
   terracotta: '#CC7861',
   brownRosy: '#DCBEB6',
   beige: '#FAF0E6',
-  orangeDark: '#CC7861',
+  orangeDark: '#4B4544',
 };

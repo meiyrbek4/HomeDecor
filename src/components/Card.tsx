@@ -12,8 +12,8 @@ import Button from './Button';
 import FavoriteIcon from '../assets/icons/FavoriteIcon';
 import AddIcon from '../assets/icons/AddIcon';
 import {useNavigation} from '@react-navigation/native';
-import {AppStackParamList} from '../navigation/AppNavigator';
 import {Furniture} from '../types/types';
+import {HomeStackParamList} from '../navigation/HomeNavigator';
 
 interface Props {
   collection: Furniture;
@@ -21,7 +21,7 @@ interface Props {
 }
 
 const Card = ({collection, wrapperWidth}: Props) => {
-  const navigation = useNavigation<AppStackParamList>();
+  const navigation = useNavigation<HomeStackParamList>();
   const themeNow = useAtomTheme();
 
   return (

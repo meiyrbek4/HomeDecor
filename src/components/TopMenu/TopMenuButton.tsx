@@ -3,10 +3,28 @@ import React, {PropsWithChildren} from 'react';
 import topMenuButtonStyle from './TopMenuButtonStyle';
 import {useAtomTheme} from '../../contexts/AtomThemeContext';
 
-const TopMenuButton = ({children}: PropsWithChildren) => {
+interface Props {
+  onPress: () => void;
+  isActive: boolean;
+  setActive: () => void;
+}
+
+const TopMenuButton = ({
+  onPress,
+  isActive,
+  setActive,
+  children,
+}: PropsWithChildren<Props>) => {
   const themeNow = useAtomTheme();
+
+  const handlePress = () => {
+    setActive();
+    onPress();
+  };
   return (
-    <Pressable style={({pressed}) => topMenuButtonStyle(pressed, themeNow)}>
+    <Pressable
+      style={({pressed}) => topMenuButtonStyle(pressed, themeNow, isActive)}
+      onPress={handlePress}>
       {children}
     </Pressable>
   );
