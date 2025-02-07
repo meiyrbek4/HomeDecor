@@ -9,7 +9,7 @@ import Launch from '../screens/Launch';
 import Login from '../screens/Login';
 import TabNavigator from './TabNavigator';
 import {useAtomTheme} from '../contexts/AtomThemeContext';
-import {colors} from '../constants/colors';
+import {colors} from '../theme/colors';
 
 type AppStack = {
   Onboarding: undefined;

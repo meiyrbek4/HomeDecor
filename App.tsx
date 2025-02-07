@@ -1,5 +1,5 @@
 import React from 'react';
-import AppNavigator from './src/Navigations/AppNavigator';
+import AppNavigator from './src/navigation/AppNavigator';
 import {AtomThemeProvider} from './src/contexts/AtomThemeContext';
 
 const App = () => {

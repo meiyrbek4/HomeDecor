@@ -1,14 +1,11 @@
 package com.homedecor
-
-
-import android.os.Bundle; 
-import org.devio.rn.splashscreen.SplashScreen; 
-
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate
 import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint.fabricEnabled
 import com.facebook.react.defaults.DefaultReactActivityDelegate
 
+import android.os.Bundle; 
+import org.devio.rn.splashscreen.SplashScreen; 
 
 class MainActivity : ReactActivity() {
   
@@ -19,13 +16,7 @@ class MainActivity : ReactActivity() {
    */
   override fun getMainComponentName(): String {
         return "HomeDecor"
-    }
-
-       override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        // Показ splash-скрина перед основной активностью
-        SplashScreen.show(this)
-    }
+    } 
 
   /**
    * Returns the instance of the [ReactActivityDelegate]. We use [DefaultReactActivityDelegate]
@@ -34,6 +25,9 @@ class MainActivity : ReactActivity() {
   override fun createReactActivityDelegate(): ReactActivityDelegate =
       DefaultReactActivityDelegate(this, mainComponentName, fabricEnabled)
 
- 
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    SplashScreen.show(this)
+  }
   
 }

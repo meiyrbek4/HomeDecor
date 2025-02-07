@@ -8,19 +8,17 @@ import {
 } from 'react-native';
 import React from 'react';
 import {useNavigation} from '@react-navigation/native';
-import {AppStackParamList} from '../Navigations/AppNavigator';
-import {colors} from '../constants/colors';
+import {AppStackParamList} from '../navigation/AppNavigator';
+import {colors} from '../theme/colors';
 import {Controller, useForm} from 'react-hook-form';
-import Title from '../ui/text/TitleBlack';
-import Subtext from '../ui/text/Subtext';
-import SubtitleBlack from '../ui/text/SubtitleBlack';
-import ButtonPrimary from '../ui/ButtonPrimary';
-import {LeagueSpartan} from '../constants/fontFamily';
-import {fontSize, spacing} from '../constants/dimensions';
-import GoogleIcon from '../ui/icons/Social/GoogleIcon';
-import FacebookIcon from '../ui/icons/Social/FacebookIcon';
+import {LeagueSpartan} from '../theme/fontFamily';
+import {fontSize, spacing} from '../theme/dimensions';
+import GoogleIcon from '../assets/icons/Social/GoogleIcon';
+import FacebookIcon from '../assets/icons/Social/FacebookIcon';
 import {useAtomValue} from 'jotai';
-import {palette, theme} from '../config/atoms';
+import {palette, theme} from '../store/themeAtomsSlice';
+import Texts from '../components/Texts';
+import Button from '../components/Button';
 
 type FormData = {
   email: string;
@@ -37,7 +35,7 @@ const Login = () => {
 
   const {
     control,
-    handleSubmit,
+    // handleSubmit,
     formState: {errors},
   } = useForm<FormData>({
     defaultValues: {
@@ -45,15 +43,19 @@ const Login = () => {
       password: '',
     },
   });
-  const onSubmit = (data: FormData) => console.log(data);
+  // const onSubmit = (data: FormData) => console.log(data);
 
   return (
     <SafeAreaView
       style={[styles.container, {backgroundColor: themeNow.background}]}>
       <View style={styles.wrapper}>
         <View style={styles.welcomeText}>
-          <Title>Welcome</Title>
-          <Subtext>Please enter your details to proceed.</Subtext>
+          <Texts variant="title" type="primary">
+            Welcome
+          </Texts>
+          <Texts variant="subtext" type="primary">
+            Please enter your details to proceed.
+          </Texts>
         </View>
         <View style={styles.form}>
           <Controller
@@ -63,7 +65,9 @@ const Login = () => {
             }}
             render={({field: {onChange, onBlur, value}}) => (
               <View style={styles.inputWrapper}>
-                <SubtitleBlack>Username or Email</SubtitleBlack>
+                <Texts variant="subtitle" type="primary">
+                  Username or Email
+                </Texts>
                 <TextInput
                   placeholder="example@example.com"
                   placeholderTextColor={colors.brownRosy}
@@ -86,7 +90,9 @@ const Login = () => {
             }}
             render={({field: {onChange, onBlur, value}}) => (
               <View style={styles.inputWrapper}>
-                <SubtitleBlack>Password</SubtitleBlack>
+                <Texts variant="subtitle" type="primary">
+                  Password
+                </Texts>
                 <TextInput
                   placeholder="Password"
                   placeholderTextColor={colors.brownRosy}
@@ -105,11 +111,12 @@ const Login = () => {
 
       <View style={styles.bottomWrapper}>
         <View style={styles.bottomWrapperItem}>
-          <ButtonPrimary
+          <Button
+            variant="primary"
             contentWidth={width}
             onPress={() => navigation.navigate('TabNavigator')}>
             Log in
-          </ButtonPrimary>
+          </Button>
           <Text style={[styles.forgotPass, {color: themeNow.primaryText}]}>
             Forgot password?
           </Text>

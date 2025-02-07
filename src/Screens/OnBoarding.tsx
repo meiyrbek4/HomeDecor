@@ -4,14 +4,14 @@ import Onboarding, {
   DoneButtonProps,
   NextButtonProps,
 } from 'react-native-onboarding-swiper';
-import ButtonPrimary from '../ui/ButtonPrimary';
 import {useNavigation} from '@react-navigation/native';
-import {colors} from '../constants/colors';
-import {fontSize} from '../constants/dimensions';
-import {Poppins} from '../constants/fontFamily';
-import {AppStackParamList} from '../Navigations/AppNavigator';
+import {colors} from '../theme/colors';
+import {fontSize} from '../theme/dimensions';
+import {LeagueSpartan, Poppins} from '../theme/fontFamily';
+import {AppStackParamList} from '../navigation/AppNavigator';
 import {useAtomValue} from 'jotai';
-import {palette, theme} from '../config/atoms';
+import {palette, theme} from '../store/themeAtomsSlice';
+import Button from '../components/Button';
 
 const OnBoarding = () => {
   const navigation = useNavigation<AppStackParamList>();
@@ -21,17 +21,17 @@ const OnBoarding = () => {
 
   const nextBtn = useCallback(({onPress, nextLabel}: NextButtonProps) => {
     return (
-      <ButtonPrimary onPress={onPress} contentWidth={200}>
+      <Button variant="primary" onPress={onPress} contentWidth={200}>
         {nextLabel}
-      </ButtonPrimary>
+      </Button>
     );
   }, []);
 
   const doneBtn = useCallback(({onPress}: DoneButtonProps) => {
     return (
-      <ButtonPrimary onPress={onPress} contentWidth={280}>
+      <Button variant="primary" onPress={onPress} contentWidth={280}>
         Get started
-      </ButtonPrimary>
+      </Button>
     );
   }, []);
 
@@ -145,6 +145,6 @@ const styles = StyleSheet.create({
   },
   subtitleStyles: {
     fontSize: fontSize.subtext,
-    fontFamily: Poppins.regular,
+    fontFamily: LeagueSpartan.regular,
   },
 });

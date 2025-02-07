@@ -1,5 +1,5 @@
 import {ViewStyle} from 'react-native';
-import {spacing} from './dimensions';
+import {spacing} from '../theme/dimensions';
 
 export const cardStyle = (wrapperWidth: number): ViewStyle => ({
   // height: 300,

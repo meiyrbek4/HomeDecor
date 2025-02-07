@@ -9,14 +9,14 @@ import {
 } from 'react-native';
 import React, {useEffect} from 'react';
 import SplashScreen from 'react-native-splash-screen';
-import ButtonPrimary from '../ui/ButtonPrimary';
-import ButtonSecondary from '../ui/ButtonSecondary';
-import {LeagueSpartan} from '../constants/fontFamily';
-import {fontSize} from '../constants/dimensions';
+
+import {LeagueSpartan} from '../theme/fontFamily';
+import {fontSize} from '../theme/dimensions';
 import {useNavigation} from '@react-navigation/native';
-import {AppStackParamList} from '../Navigations/AppNavigator';
+import {AppStackParamList} from '../navigation/AppNavigator';
 import {useAtomValue} from 'jotai';
-import {palette, theme} from '../config/atoms';
+import {palette, theme} from '../store/themeAtomsSlice';
+import Button from '../components/Button';
 
 const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
@@ -59,14 +59,15 @@ const Launch = () => {
           </Text>
 
           <View style={styles.btnContainer}>
-            <ButtonPrimary
+            <Button
+              variant="primary"
               contentWidth={contentWidth}
               onPress={handleNavigateLogin}>
               Log in
-            </ButtonPrimary>
-            <ButtonSecondary contentWidth={contentWidth}>
+            </Button>
+            <Button variant="secondary" contentWidth={contentWidth}>
               Sign up
-            </ButtonSecondary>
+            </Button>
           </View>
         </View>
       </ImageBackground>

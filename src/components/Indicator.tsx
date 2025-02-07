@@ -1,7 +1,7 @@
 import {StyleSheet, View} from 'react-native';
 import React from 'react';
-import {spacing} from '../../constants/dimensions';
-import {colors} from '../../constants/colors';
+import {spacing} from '../theme/dimensions';
+import {colors} from '../theme/colors';
 
 const Indicator = () => {
   return (

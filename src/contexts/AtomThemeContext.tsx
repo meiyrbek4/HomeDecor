@@ -1,7 +1,7 @@
 import {useAtomValue} from 'jotai';
 import React, {createContext, PropsWithChildren, useContext} from 'react';
-import {palette, Theme, theme} from '../config/atoms';
-import {colors} from '../constants/colors';
+import {palette, Theme, theme} from '../store/themeAtomsSlice';
+import {colors} from '../theme/colors';
 
 const AtomThemeContext = createContext<Theme>({
   background: colors.white,

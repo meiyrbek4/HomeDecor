@@ -1,15 +1,19 @@
 import {atom} from 'jotai';
-import {colors} from '../constants/colors';
+import {colors} from '../theme/colors';
 
 export interface Theme {
   background: string;
   primaryText: string;
+  secondaryText: string;
   itemBackground: string;
   icon: string;
   tint: string;
 
   activeElement: string;
   inactiveElement: string;
+
+  primaryTitle: string;
+  secondaryTitle: string;
 }
 interface Palette {
   light: Theme;
@@ -22,21 +26,29 @@ export const palette = atom<Palette>({
   light: {
     background: colors.white,
     primaryText: colors.black,
+    secondaryText: colors.brownRosy,
     itemBackground: colors.beige,
     icon: '#4B4544',
     activeElement: colors.black,
     inactiveElement: colors.salmon,
     tint: colors.black,
+
+    primaryTitle: colors.salmon,
+    secondaryTitle: colors.black,
   },
   dark: {
     background: colors.black,
     primaryText: colors.white,
+    secondaryText: colors.salmon,
     itemBackground: '#4B4544',
     icon: colors.salmon,
     tint: colors.white,
 
     activeElement: colors.salmon,
     inactiveElement: colors.white,
+
+    primaryTitle: colors.white,
+    secondaryTitle: colors.salmon,
   },
 });
 

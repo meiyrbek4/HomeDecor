@@ -1,5 +1,5 @@
 import {ViewStyle} from 'react-native';
-import {Theme} from '../../../config/atoms';
+import {Theme} from '../../store/themeAtomsSlice';
 
 const topMenuButtonStyle = (pressed: boolean, theme: Theme): ViewStyle => ({
   width: 70,

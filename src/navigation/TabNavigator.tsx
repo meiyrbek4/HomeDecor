@@ -1,17 +1,17 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import Home from '../screens/BottomScreens/Home';
-import HomeIcon from '../ui/icons/BottomMenuIcons/HomeIcon';
+import HomeIcon from '../assets/icons/BottomMenuIcons/HomeIcon';
 import Categories from '../screens/BottomScreens/Categories';
 import Cart from '../screens/BottomScreens/Cart';
 import Wishlist from '../screens/BottomScreens/Wishlist';
 import Profile from '../screens/BottomScreens/Profile';
-import CategoriesIcon from '../ui/icons/BottomMenuIcons/CategoriesIcon';
-import CartIcon from '../ui/icons/BottomMenuIcons/CartIcon';
-import WishlistIcon from '../ui/icons/BottomMenuIcons/WishlistIcon';
-import ProfileIcon from '../ui/icons/BottomMenuIcons/ProfileIcon';
+import CategoriesIcon from '../assets/icons/BottomMenuIcons/CategoriesIcon';
+import CartIcon from '../assets/icons/BottomMenuIcons/CartIcon';
+import WishlistIcon from '../assets/icons/BottomMenuIcons/WishlistIcon';
+import ProfileIcon from '../assets/icons/BottomMenuIcons/ProfileIcon';
 
 import {useAtomTheme} from '../contexts/AtomThemeContext';
+import HomeNavigator from './HomeNavigator';
 
 const Tab = createBottomTabNavigator();
 
@@ -20,12 +20,12 @@ const TabNavigator = () => {
 
   return (
     <Tab.Navigator
-      initialRouteName="Home"
+      initialRouteName="HomeNavigator"
       screenOptions={({route}) => ({
         headerShown: false,
         tabBarIcon: ({focused}) => {
           let iconName;
-          if (route.name === 'Home') {
+          if (route.name === 'HomeNavigator') {
             iconName = focused ? (
               <HomeIcon color={themeNow.activeElement} />
             ) : (
@@ -65,9 +65,10 @@ const TabNavigator = () => {
           justifyContent: 'space-between',
           backgroundColor: themeNow.background,
           height: 60,
+          alignItems: 'center',
         },
       })}>
-      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="HomeNavigator" component={HomeNavigator} />
       <Tab.Screen name="Categories" component={Categories} />
       <Tab.Screen name="Cart" component={Cart} />
       <Tab.Screen name="Wishlist" component={Wishlist} />
